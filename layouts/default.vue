@@ -34,20 +34,22 @@
   .slice-post-feed {
     .post {
       border: 1px solid black;
-      padding: 1em 1em 0;
-      margin: 1em 0;
+      padding: 1.5rem 1.5rem 0.6rem;
+      margin: 1rem 0;
     }
   }
   .slice-text-block {
-    & > * {
-      padding-bottom: 1em;
+    & p,
+    & ul,
+    & ol {
+      padding-bottom: 1rem;
     }
   }
 
   .slice-image-row {
     .slice-image-row-caption {
       & > * {
-        margin: 1em 0 1em;
+        margin: 1rem 0 1rem;
       }
       text-align: center;
       color: grey;

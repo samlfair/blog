@@ -17,13 +17,15 @@ export default {
     return { config };
   },
   head() {
-    return this.$seo(
-      this.$route.path,
-      "Title",
-      "Description",
-      { url: "url", alt: "alt" },
-      "🙂"
-    );
+    if (this.config.site_title) {
+      return this.$seo(
+        this.$route.path,
+        this.config.site_title,
+        this.config.site_description,
+        { url: "url", alt: "alt" },
+        this.config.emoji_favicon
+      );
+    }
     // accepts ( path, title, description, image, emoji )
   }
 };
