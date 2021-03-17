@@ -8,7 +8,7 @@
 import SliceZone from "vue-slicezone";
 
 export default {
-  name: "Home",
+  name: "Page",
   components: {
     SliceZone
   },
