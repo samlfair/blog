@@ -64,7 +64,7 @@
       font-size: 0.9rem;
     }
     .image {
-      background: lightgrey;
+      // background: lightgrey;
     }
   }
 }
