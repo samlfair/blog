@@ -31,6 +31,7 @@
 
 ::v-deep {
   // Style slices in here
+
   .slice-post-feed {
     .post {
       border: 1px solid black;
@@ -43,6 +44,11 @@
     & ul,
     & ol {
       padding-bottom: 1rem;
+      font-size: 19px;
+      line-height: 1.4211;
+      font-weight: 400;
+      letter-spacing: 0.012em;
+      margin-top: 0;
     }
   }
 
