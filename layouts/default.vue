@@ -36,11 +36,21 @@
     .post {
       border: 1px solid rgba(0, 0, 0, 0.3);
       background: rgba(0, 0, 0, 0.02);
+      transition: all 0.4s;
       border-radius: 2px;
       box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.1),
         inset 0px 0px 2px rgba(0, 0, 0, 0.15);
-      padding: 1.5rem 1.5rem 0.6rem;
+      padding: 0.5rem 1.5rem 0.6rem;
       margin: 1rem 0;
+      .date {
+        display: block;
+        font-size: 0.9rem;
+        color: rgba(0, 0, 0, 0.5);
+        line-height: 3rem;
+      }
+      &:hover {
+        background: rgba(0, 0, 0, 0.03);
+      }
     }
   }
   .slice-text-block {
