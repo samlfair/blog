@@ -18,7 +18,7 @@
     "nuxt": "^2.14.6",
     "nuxt-sm": "0.0.6",
     "prismic-dom": "^2.2.4",
-    "sams-slices": "0.0.8",
+    "sams-slices": "0.0.10",
     "vue-slicezone": "0.0.30"
   },
   "devDependencies": {

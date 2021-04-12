@@ -34,7 +34,11 @@
 
   .slice-post-feed {
     .post {
-      border: 1px solid black;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      background: rgba(0, 0, 0, 0.02);
+      border-radius: 2px;
+      box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.1),
+        inset 0px 0px 2px rgba(0, 0, 0, 0.15);
       padding: 1.5rem 1.5rem 0.6rem;
       margin: 1rem 0;
     }
@@ -44,11 +48,18 @@
     & ul,
     & ol {
       padding-bottom: 1rem;
-      font-size: 19px;
+      font-size: 1.15rem;
       line-height: 1.4211;
       font-weight: 400;
       letter-spacing: 0.012em;
       margin-top: 0;
+    }
+    a {
+      text-decoration: none;
+      color: rgba(94, 94, 255, 0.7);
+      &:hover {
+        color: rgba(94, 94, 255, 0.9);
+      }
     }
   }
 
