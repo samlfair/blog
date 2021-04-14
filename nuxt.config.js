@@ -37,7 +37,15 @@ export default {
     [
       "@nuxtjs/prismic",
       {
-        endpoint: smConfig.apiEndpoint
+        endpoint: smConfig.apiEndpoint,
+        apiOptions: {
+          routes: [
+            {
+              type: "post",
+              path: "/"
+            }
+          ]
+        }
       }
     ],
     ["nuxt-sm"]
@@ -51,5 +59,11 @@ export default {
       "~/node_modules/sams-slices/src/slices/**/*.stories.js"
     ]
   },
-  ignore: ["**/*.stories.js"]
+  ignore: ["**/*.stories.js"],
+  samsSlices: {
+    tagType: "tag",
+    tagGroup: "tags"
+    // showDates: true,
+    // linkDates: true
+  }
 };

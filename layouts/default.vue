@@ -40,13 +40,23 @@
       border-radius: 2px;
       box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.1),
         inset 0px 0px 2px rgba(0, 0, 0, 0.15);
-      padding: 0.5rem 1.5rem 0.6rem;
+      padding: 0.5rem 1.5rem 1rem;
       margin: 1rem 0;
       .date {
         display: block;
         font-size: 0.9rem;
         color: rgba(0, 0, 0, 0.5);
         line-height: 3rem;
+      }
+      .tag {
+        display: inline-block;
+        font-size: 0.7rem;
+        background: white;
+        color: rgba(0, 0, 0, 0.5);
+        padding: 0.4rem 0.7rem 0.5rem;
+        margin-bottom: 0.3rem;
+        border-radius: 1rem;
+        border: 1px solid rgba(0, 0, 0, 0.3);
       }
       &:hover {
         background: rgba(0, 0, 0, 0.03);
