@@ -42,7 +42,7 @@ export default {
           routes: [
             {
               type: "post",
-              path: "/"
+              path: "/:uid"
             }
           ]
         }
@@ -62,8 +62,8 @@ export default {
   ignore: ["**/*.stories.js"],
   samsSlices: {
     tagType: "tag",
-    tagGroup: "tags"
-    // showDates: true,
-    // linkDates: true
+    tagGroup: "tags",
+    showDates: true,
+    linkDates: true
   }
 };

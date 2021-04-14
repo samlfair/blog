@@ -42,6 +42,9 @@
         inset 0px 0px 2px rgba(0, 0, 0, 0.15);
       padding: 0.5rem 1.5rem 1rem;
       margin: 1rem 0;
+      a {
+        text-decoration: none;
+      }
       .date {
         display: block;
         font-size: 0.9rem;
