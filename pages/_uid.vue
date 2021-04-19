@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <slice-zone :uid="$route.params.uid" type="page" />
+    <slice-zone :uid="$route.params.uid" type="post" />
   </div>
 </template>
 

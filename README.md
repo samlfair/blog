@@ -19,38 +19,7 @@ Prismic repo: https://nuxt-blrplt.prismic.io
 
 ## To Do
 
-- [x] Emoji favicon
-- [x] Custom types
-- [ ] Configure GitHub template
-- [ ] Finish dynamic route
-- [ ] Finish root route
-- [ ] SliceZone
-- [ ] Layout file
-- [ ] Map custom types
-- [ ] Imgix image component?
-- [ ] Map custom type fields?
-
-## Noteworthy Files
-
-```
-.
-├── app/
-│   └── prismic/
-│       └── link-resolver.js
-├── components/
-│   └── SliceZone.vue
-├── custom_types/
-├── layouts/
-│   └── default.vue
-├── pages/
-│   ├── _uid.vue
-│   └── index.vue
-├── plugins/
-│   ├── html-serializer.js
-│   └── seo-handler.js
-└── nuxt.config.js
-
-```
+- [ ] [Block Google](https://developers.google.com/search/docs/advanced/robots/robots_meta_tag#data-nosnippet-attr)
 
 ## Build Setup
 

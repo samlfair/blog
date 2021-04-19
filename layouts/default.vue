@@ -1,8 +1,10 @@
 <template>
   <div class="layout-default-outer">
+    <div class="gutter left"></div>
     <div class="layout-default-inner">
       <Nuxt />
     </div>
+    <div class="gutter right"></div>
   </div>
 </template>
 
@@ -12,14 +14,27 @@
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 18px;
   display: flex;
+  flex-direction: row;
   width: 100vw;
-  justify-content: center;
+  min-height: 100vh;
+  justify-content: stretch;
 }
-
 .layout-default-inner {
   width: 100%;
   max-width: 700px;
   padding: 20px 10px;
+}
+
+@media (min-width: 700px) {
+  .gutter.left {
+    flex: 2 1 auto;
+  }
+  .gutter.right {
+    flex: 3 1 auto;
+  }
+  .layout-default-inner {
+    flex: 5 1 auto;
+  }
 }
 
 *,

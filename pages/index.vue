@@ -14,7 +14,7 @@ export default {
   },
   async asyncData({ params, $prismic, error }) {
     const config = await $prismic.api.getSingle("config");
-    return { config };
+    return { config: config.data };
   },
   head() {
     if (this.config.site_title) {
