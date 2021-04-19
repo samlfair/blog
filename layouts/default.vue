@@ -18,6 +18,7 @@
   width: 100vw;
   min-height: 100vh;
   justify-content: stretch;
+  padding-top: 1.5rem;
 }
 .layout-default-inner {
   width: 100%;
