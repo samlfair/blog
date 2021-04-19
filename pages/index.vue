@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" data-nosnippet>
     <slice-zone uid="home" type="page" />
   </div>
 </template>

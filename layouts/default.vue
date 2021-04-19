@@ -137,6 +137,9 @@
       }
     }
   }
+  .slice-image-row + .slice-text-block {
+    margin-top: 1.5rem;
+  }
 }
 
 *,
