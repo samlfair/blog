@@ -2,7 +2,7 @@ const smConfig = require("./sm.json");
 
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
-  target: "static",
+  target: process.env.TARGET || "static",
   head: {
     title: "Loading...",
     meta: [
