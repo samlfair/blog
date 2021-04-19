@@ -66,6 +66,7 @@
         font-size: 0.9rem;
         color: rgba(0, 0, 0, 0.5);
         line-height: 3rem;
+        padding-bottom: 0.5rem;
       }
       .tag {
         display: inline-block;
@@ -73,7 +74,7 @@
         background: white;
         color: rgba(0, 0, 0, 0.5);
         padding: 0.4rem 0.7rem 0.5rem;
-        margin-bottom: 0.3rem;
+        margin: 0.7rem 0 0.5rem;
         border-radius: 1rem;
         border: 1px solid rgba(0, 0, 0, 0.3);
       }
@@ -103,6 +104,9 @@
   }
 
   .slice-image-row {
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    overflow: hidden;
     .slice-image-row-caption {
       & > * {
         margin: 1rem 0 1rem;
@@ -113,8 +117,24 @@
       font-weight: 200;
       font-size: 0.9rem;
     }
+  }
+  .slice-image-row ~ .slice-image-row {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+  .slice-image-row:last-child {
     .image {
-      // background: lightgrey;
+      overflow: hidden;
+    }
+    .image:first-child {
+      img {
+        border-bottom-left-radius: 3px;
+      }
+    }
+    .image:last-child {
+      img {
+        border-bottom-right-radius: 3px;
+      }
     }
   }
 }
