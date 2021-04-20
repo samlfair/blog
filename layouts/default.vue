@@ -50,12 +50,10 @@
 
   .slice-post-feed {
     .post {
-      border: 1px solid rgba(0, 0, 0, 0.3);
       background: rgba(0, 0, 0, 0.02);
       transition: all 0.4s;
       border-radius: 2px;
-      box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.1),
-        inset 0px 0px 2px rgba(0, 0, 0, 0.15);
+      box-shadow: -2px 5px 12px 1px rgb(0 0 0 / 10%);
       padding: 0.5rem 1.5rem 1rem;
       margin: 1rem 0;
       a {
