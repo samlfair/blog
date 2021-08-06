@@ -1,9 +1,0 @@
-{
-  "libraries": [
-    "@/slices",
-    "@/node_modules/sams-slices/src/slices"
-  ],
-  "apiEndpoint": "https://samlfair.cdn.prismic.io/api/v2",
-  "_latest": "0.0.44",
-  "storybook": "http://localhost:3003"
-}
