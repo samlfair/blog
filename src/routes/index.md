@@ -4,7 +4,7 @@
   const posts = globToArray(modules)
 </script>
 
-# Sam's Blog
+# Sam's Blogz
 
 {#each posts as post}
 
