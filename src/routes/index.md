@@ -9,6 +9,11 @@ description: This is Sam's blog.
   const posts = globToArray(modules)
 </script>
 
+<<<<<<< HEAD
+=======
+# Sam's Blogz
+
+>>>>>>> a2bb72dbd81007fc83dc3e4925b4353023090796
 {#each posts as post}
 
 <article>
