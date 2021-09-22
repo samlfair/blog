@@ -1,44 +1,45 @@
 <script>
+  import { browser } from "$app/env"
+  import Seo from "./seo.svelte"
+
   export let title;
   export let description;
   export let date;
 
   const dateObject = new Date(date || 0);
-  const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
+  const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' }
   const displayDate = new Intl.DateTimeFormat('en-US', dateOptions).format(dateObject)
   const isoDate = dateObject.toISOString()
 </script>
 
-<svelte:head>
-  <title>{title}</title>
-</svelte:head>
+{#if (browser && window?.location.href.match(/blog/))}
+  <Seo { ...{title, description}} />
+{/if}
 
 <article>
   <header>
-    <h2>{title || "Untitled"}</h2>
-    {#if date}
-      <p><time datetime={isoDate}>{date ? displayDate : ""}</time></p>
-    {/if}
-    {#if description}
-      <p class="description">{description}</p>
+    {#if browser && window?.location.href.match(/blog/)}
+      <h2>{title || "Untitled"}</h2>
+      {#if date}
+        <p><time datetime={isoDate}>{date ? displayDate : ""}</time></p>
+      {/if}
     {/if}
   </header>
   <slot></slot>
 </article>
 
 <style>
+  h2 {
+    margin-bottom: .2em;
+  }
   p {
     margin: 0 0 .7em;
   }
   time {
-    opacity: 50%;
+    font-weight: bold;
     text-transform: uppercase;
     font-size: .7em;
     letter-spacing: .5px;
-  }
-
-  .description {
-    opacity: 60%;
-    font-size: 1.2em;
+    color: #bbb;
   }
 </style>
